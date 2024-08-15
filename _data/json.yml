@@ -3,19 +3,31 @@
 - key: Description
   value:
     - Hello!
-    - You can find me doing thing
-    - all the things.
+    - i'm a long distance cyclist
+    - i'm a ultramarathon runner
+    - i'm a globe trotting traveler
+    - i'm a photographer of friends
+    - i'm a lover of all things code
   typed: true
-- key: Current Whereabouts
+- key: Countries Visited
   value:
-    - USA
+    - United States 🇺🇸 🦅
+    - China
+    - Peru
+    - Netherlands
+    - Spain
+    - Canada
+    - Columbia
+    - United Kingdon
+    - Qatar
+    - France
 - key: Work
   value:
     - key: Industrial AI (Sept)
       value: full stack
-    - key: Standard Intelligence
+    - key: Standard Intelligence (current)
       value: data team
-    - key: Osmos Learn
+    - key: Osmos Learn (prev)
       value: founder
 - key: contact
   value: +1 336 582 4875
