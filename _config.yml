@@ -1,7 +1,7 @@
 title: Hacked Jekyll
 description: Jekyll microtheme that looks like JSON
-baseurl: /hacked-jekyll
-url: https://piazzai.github.io
+baseurl: ""
+url: https://1bf0ff2c.ryan-huang1-github-io.pages.dev
 
 theme: hacked-jekyll
 
@@ -16,4 +16,3 @@ plugins:
 
 sass:
   sourcemap: never
-  
