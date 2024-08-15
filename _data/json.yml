@@ -30,9 +30,10 @@
     - key: Osmos Learn (prev)
       value: founder
 - key: contact
-  value: ryanhuang.xyz
-  value: +1 336 582 4875
-  value: rfhuang17@gmail.com
+  value:
+    - ryanhuang.xyz
+    - +1 336 582 4875
+    - rfhuang17@gmail.com
 - key: Profiles
   value:
     - value: Instagram
