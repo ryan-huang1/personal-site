@@ -1,38 +1,31 @@
 - key: Name
-  value: Place Holder
+  value: Ryan Huang
 - key: Description
   value:
     - Hello!
-    - This tiny website
-    - Looks like JSON
+    - You can find me doing thing
+    - all the things.
   typed: true
-- key: CV
-  value: cv.pdf
-  url: /cv.pdf
-- key: Address
+- key: Current Whereabouts
   value:
-    - University of Jekyll
-    - Department of Themes
-    - 123 Main St, Anytown, USA
-- key: Contact
+    - USA
+- key: Work
   value:
-    - key: Office
-      value: Foobar Hall 1.23
-    - key: Phone
-      value: +1 234 567 890
-    - key: Email
-      value: username@domain.com
-      url: "mailto:username@domain.com"
-- key: Source
-  value: piazzai/hacked-jekyll
-  url: https://github.com/piazzai/hacked-jekyll
+    - key: Industrial AI (Sept)
+      value: full stack
+    - key: Standard Intelligence
+      value: data team
+    - key: Osmos Learn
+      value: founder
+- key: contact
+  value: +1 336 582 4875
 - key: Profiles
   value:
     - value: Instagram
-      url: https://www.instagram.com
-    - value: LinkedIn
-      url: https://www.linkedin.com
-    - value: StackOverflow
-      url: https://stackoverflow.com
+      url: https://www.instagram.com/ryan_huang1/
     - value: GitHub
-      url: https://github.com
+      url: https://github.com/ryan-huang1
+    - value: Twitter
+      url: https://x.com/ryan_huang_1
+    - value: LinkedIn
+      url: https://linkedin.com/in/rfhuang
