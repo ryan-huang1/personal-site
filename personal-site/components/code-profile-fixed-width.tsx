@@ -75,10 +75,18 @@ export default function CodeProfile() {
     "rfhuang17@gmail.com"
   ],
   "profiles": [
-    "instagram",
-    "github",
-    "twitter",
-    "linkedin"
+    `}
+        <a href="https://www.instagram.com/ryan_huang1/" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer">"instagram"</a>
+        {`,
+    `}
+        <a href="https://github.com/ryan-huang1" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer">"github"</a>
+        {`,
+    `}
+        <a href="https://x.com/ryan_huang_1" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer">"twitter"</a>
+        {`,
+    `}
+        <a href="https://linkedin.com/in/rfhuang" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer">"linkedin"</a>
+        {`
   ]
 }`}
       </pre>
