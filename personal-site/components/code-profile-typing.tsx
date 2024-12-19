@@ -79,7 +79,7 @@ export default function CodeProfile() {
   
   "contact": [
     "ryanhuang.xyz",
-    "rfhuang17@gmail.com"
+    "hello@ryanhuang.xyz"
   ],
   
   "profiles": [
