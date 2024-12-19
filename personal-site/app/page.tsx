@@ -1,4 +1,4 @@
-import CodeProfile from "@/components/code-profile-typing"
+import CodeProfile from "@/components/code-profile-realistic-typing"
 
 export default function Page() {
   return (
