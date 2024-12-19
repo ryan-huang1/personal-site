@@ -26,11 +26,13 @@ export default function CodeProfile() {
 
   const typeDescription = useCallback(async () => {
     const currentDesc = descriptions[descriptionIndex];
+    // Typing the description
     for (let i = 0; i <= currentDesc.length; i++) {
       setTypedDescription(currentDesc.slice(0, i));
       await sleep(typeSpeed + Math.random() * 20);
     }
     await sleep(backDelay);
+    // Deleting the description
     for (let i = currentDesc.length; i >= 0; i--) {
       setTypedDescription(currentDesc.slice(0, i));
       await sleep(backSpeed + Math.random() * 10);
@@ -40,9 +42,11 @@ export default function CodeProfile() {
 
   useEffect(() => {
     document.body.style.backgroundColor = '#1e1e1e';
-    typeDescription();
+    const typingTask = typeDescription();
+
     return () => {
       document.body.style.backgroundColor = '';
+      // Cancel ongoing promises if needed in complex scenarios
     };
   }, [typeDescription]);
 
@@ -77,14 +81,13 @@ export default function CodeProfile() {
   ],
   
   "profiles": [
-    "${'"'}instagram${'"'}",
-    "${'"'}github${'"'}",
-    "${'"'}twitter${'"'}",
-    "${'"'}linkedin${'"'}"
+    "instagram",
+    "github",
+    "twitter",
+    "linkedin"
   ]
 }`}
       </pre>
     </div>
   );
 }
-
