@@ -2,7 +2,7 @@ import CodeProfile from "@/components/code-profile-realistic-typing"
 
 export default function Page() {
   return (
-    <div className="md:pr-[25vw]">
+    <div>
       <CodeProfile />
     </div>
   )

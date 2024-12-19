@@ -76,8 +76,9 @@ export default function CodeProfile() {
   }, [text, index, isDeleting]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#1e1e1e] text-[#4ec9b0] p-4">
-      <pre className="font-mono text-sm leading-relaxed overflow-x-auto max-w-full">
+    <div className="min-h-screen flex items-center bg-[#1e1e1e] text-[#4ec9b0]">
+      <div className="pl-4 md:pl-[30vw]">
+        <pre className="font-mono text-sm leading-relaxed">
         {`{
   "name": "ryan huang",
   
@@ -122,5 +123,6 @@ export default function CodeProfile() {
 }`}
       </pre>
     </div>
+  </div>
   );
 }
