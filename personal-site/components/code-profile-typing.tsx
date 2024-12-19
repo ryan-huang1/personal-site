@@ -79,7 +79,6 @@ export default function CodeProfile() {
   
   "contact": [
     "ryanhuang.xyz",
-    "+1 336 582 4875",
     "rfhuang17@gmail.com"
   ],
   
