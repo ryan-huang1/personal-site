@@ -16,7 +16,6 @@ const descriptions = [
 export default function CodeProfile() {
   const [typedDescription, setTypedDescription] = useState('');
   const [descriptionIndex, setDescriptionIndex] = useState(0);
-  const [isTyping, setIsTyping] = useState(true);
 
   const typeSpeed = 30;
   const backSpeed = 10;
@@ -42,7 +41,7 @@ export default function CodeProfile() {
 
   useEffect(() => {
     document.body.style.backgroundColor = '#1e1e1e';
-    const typingTask = typeDescription();
+    typeDescription();
 
     return () => {
       document.body.style.backgroundColor = '';
