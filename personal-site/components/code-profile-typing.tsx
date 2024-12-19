@@ -84,10 +84,10 @@ export default function CodeProfile() {
   ],
   
   "profiles": [
-    "${'"'}instagram${'"'}",
-    "${'"'}github${'"'}",
-    "${'"'}twitter${'"'}",
-    "${'"'}linkedin${'"'}"
+    "instagram",
+    "github",
+    "twitter",
+    "linkedin"
   ]
 }`}
       </pre>

@@ -75,10 +75,10 @@ export default function CodeProfile() {
     "rfhuang17@gmail.com"
   ],
   "profiles": [
-    "${'"'}instagram${'"'}",
-    "${'"'}github${'"'}",
-    "${'"'}twitter${'"'}",
-    "${'"'}linkedin${'"'}"
+    "instagram",
+    "github",
+    "twitter",
+    "linkedin"
   ]
 }`}
       </pre>
