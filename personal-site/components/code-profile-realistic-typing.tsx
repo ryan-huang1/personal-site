@@ -91,7 +91,10 @@ export default function CodeProfile() {
     "netherlands",
     "canada",
     "united kingdom",
-    "france"
+    "france",
+    "colombia",
+    "qatar",
+    "spain"
   ],
   
   "work": [
