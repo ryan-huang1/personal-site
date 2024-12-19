@@ -85,16 +85,16 @@ export default function CodeProfile() {
   
   "profiles": [
     `}
-        <a href="https://www.instagram.com/ryan_huang1/" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer">"instagram"</a>
+        <a href="https://www.instagram.com/ryan_huang1/" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer">&quot;instagram&quot;</a>
         {`,
     `}
-        <a href="https://github.com/ryan-huang1" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer">"github"</a>
+        <a href="https://github.com/ryan-huang1" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer">&quot;github&quot;</a>
         {`,
     `}
-        <a href="https://x.com/ryan_huang_1" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer">"twitter"</a>
+        <a href="https://x.com/ryan_huang_1" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer">&quot;twitter&quot;</a>
         {`,
     `}
-        <a href="https://linkedin.com/in/rfhuang" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer">"linkedin"</a>
+        <a href="https://linkedin.com/in/rfhuang" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer">&quot;linkedin&quot;</a>
         {`
   ]
 }`}
