@@ -104,8 +104,12 @@ export default function CodeProfile() {
   ],
   
   "contact": [
-    "ryanhuang.xyz",
-    "hello@ryanhuang.xyz"
+    `}
+        <a href="https://ryanhuang.xyz" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer">&quot;ryanhuang.xyz&quot;</a>
+        {`,
+    `}
+        <a href="mailto:hello@ryanhuang.xyz" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer">&quot;hello@ryanhuang.xyz&quot;</a>
+        {`
   ],
   
   "profiles": [
