@@ -4,8 +4,9 @@ import { useState, useEffect } from 'react';
 
 const descriptions = [
   "Hello!",
-  "i'm a long distance cyclist",
   "i'm a ultramarathon runner",
+  "i'm a crazy motorcyclist",
+  "i'm a long distance cyclist",
   "i'm a traveler of the world",
   "i'm a photographer of friends",
   "i'm a lover of all things code",
