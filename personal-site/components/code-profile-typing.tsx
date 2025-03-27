@@ -76,7 +76,8 @@ export default function CodeProfile() {
   ],
   
   "work": [
-    "horen research (current)": "mle",
+    "boardy ai (current)": "software",
+    "horen research (prev)": "mle",
     "standard intelligence (prev)": "data team",
     "osmos learn (prev)": "founder"
   ],
