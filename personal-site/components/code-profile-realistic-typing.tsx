@@ -99,8 +99,9 @@ export default function CodeProfile() {
   ],
   
   "work": [
-    "boardy ai (current)": "software",
-    "horen research (prev)": "mle",
+    "endeavor ai (current)": "forward delpoyment",
+    "boardy ai (prev)": "agentic voice",
+    "horen research (prev)": "ml optomization",
     "standard intelligence (prev)": "data team",
     "osmos learn (prev)": "founder"
   ],
