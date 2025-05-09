@@ -12,7 +12,7 @@ const descriptions = [
   "i'm a lover of all things code",
   "i'm a hit and run survivor",
   "i'm a proud cat dad",
-  "i'm a ignorer of rules",
+  "i'm an ignorer of rules",
   "i'm a causer of worries"
 ];
 
