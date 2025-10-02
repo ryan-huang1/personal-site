@@ -71,7 +71,7 @@ export default function CodeProfile() {
   "work": [
     "endeavor ai (current)": "head of product",
     "boardy ai (prev)": "agentic voice",
-    "horen research (prev)": "ml optomization",
+    "horen research (prev)": "ml optimization",
     "standard intelligence (prev)": "data team",
     "osmos learn (prev)": "founder"
   ],

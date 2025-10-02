@@ -23,7 +23,7 @@ export default function CodeProfile() {
 
   useEffect(() => {
     document.body.style.backgroundColor = '#1e1e1e';
-    
+
     const typeInterval = setInterval(() => {
       if (isTyping) {
         setTypedDescription(prev => {
@@ -78,7 +78,7 @@ export default function CodeProfile() {
   "work": [
     "endeavor ai (current)": "head of product",
     "boardy ai (prev)": "agentic voice",
-    "horen research (prev)": "ml optomization",
+    "horen research (prev)": "ml optimization",
     "standard intelligence (prev)": "data team",
     "osmos learn (prev)": "founder"
   ],

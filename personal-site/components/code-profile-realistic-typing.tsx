@@ -30,7 +30,7 @@ export default function CodeProfile() {
     const type = () => {
       const currentText = descriptions[index];
       const nextText = descriptions[(index + 1) % descriptions.length];
-      
+
       if (isDeleting) {
         // Fast deletion, but preserve prefix if both current and next texts have it
         if (currentText.startsWith(PREFIX) && nextText.startsWith(PREFIX)) {
@@ -43,7 +43,7 @@ export default function CodeProfile() {
         } else {
           setText(currentText.substring(0, text.length - 1));
         }
-        
+
         if (text.length === (currentText.startsWith(PREFIX) && nextText.startsWith(PREFIX) ? PREFIX.length : 0)) {
           setIsDeleting(false);
           setIndex((prev) => (prev + 1) % descriptions.length);
@@ -55,7 +55,7 @@ export default function CodeProfile() {
       } else {
         // Faster typing with slight variation
         setText(currentText.substring(0, text.length + 1));
-        
+
         if (text.length === currentText.length) {
           timeoutId = setTimeout(() => {
             setIsDeleting(true);
@@ -63,7 +63,7 @@ export default function CodeProfile() {
           }, 500);
           return;
         }
-        
+
         timeoutId = setTimeout(type, 25 + Math.random() * 15);
       }
     };
@@ -80,7 +80,7 @@ export default function CodeProfile() {
     <div className="h-[100dvh] flex items-center bg-[#1e1e1e] text-[#4ec9b0] overflow-x-auto overflow-y-hidden">
       <div className="pl-4 md:pl-[30vw]">
         <pre className="font-mono text-[11px] md:text-sm leading-[1.2] md:leading-relaxed">
-        {`{
+          {`{
   "name": "ryan huang",
   
   "description": "${text}${!isDeleting ? '|' : ' '}",
@@ -101,37 +101,37 @@ export default function CodeProfile() {
   "work": [
     "endeavor ai (current)": "head of product",
     "boardy ai (prev)": "agentic voice",
-    "horen research (prev)": "ml optomization",
+    "horen research (prev)": "ml optimization",
     "standard intelligence (prev)": "data team",
     "osmos learn (prev)": "founder"
   ],
   
   "contact": [
     `}
-        <a href="https://ryanhuang.xyz" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer">&quot;ryanhuang.xyz&quot;</a>
-        {`,
+          <a href="https://ryanhuang.xyz" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer">&quot;ryanhuang.xyz&quot;</a>
+          {`,
     `}
-        <a href="mailto:hello@ryanhuang.xyz" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer">&quot;hello@ryanhuang.xyz&quot;</a>
-        {`
+          <a href="mailto:hello@ryanhuang.xyz" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer">&quot;hello@ryanhuang.xyz&quot;</a>
+          {`
   ],
   
   "profiles": [
     `}
-        <a href="https://www.instagram.com/ryan_huang1/" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer">&quot;instagram&quot;</a>
-        {`,
+          <a href="https://www.instagram.com/ryan_huang1/" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer">&quot;instagram&quot;</a>
+          {`,
     `}
-        <a href="https://github.com/ryan-huang1" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer">&quot;github&quot;</a>
-        {`,
+          <a href="https://github.com/ryan-huang1" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer">&quot;github&quot;</a>
+          {`,
     `}
-        <a href="https://x.com/ryan_huang_1" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer">&quot;twitter&quot;</a>
-        {`,
+          <a href="https://x.com/ryan_huang_1" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer">&quot;twitter&quot;</a>
+          {`,
     `}
-        <a href="https://linkedin.com/in/rfhuang" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer">&quot;linkedin&quot;</a>
-        {`
+          <a href="https://linkedin.com/in/rfhuang" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer">&quot;linkedin&quot;</a>
+          {`
   ]
 }`}
-      </pre>
+        </pre>
+      </div>
     </div>
-  </div>
   );
 }
