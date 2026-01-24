@@ -77,8 +77,8 @@ export default function CodeProfile() {
   }, [text, index, isDeleting]);
 
   return (
-    <div className="h-[100dvh] flex items-center bg-[#1e1e1e] text-[#4ec9b0] overflow-x-auto overflow-y-hidden">
-      <div className="pl-4 md:pl-[30vw]">
+    <div className="min-h-[100dvh] flex items-center bg-[#1e1e1e] text-[#4ec9b0] overflow-auto">
+      <div className="pl-4 md:pl-[30vw] py-8">
         <pre className="font-mono text-[11px] md:text-sm leading-[1.2] md:leading-relaxed">
           {`{
   "name": "ryan huang",
