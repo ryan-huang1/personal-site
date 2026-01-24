@@ -47,8 +47,8 @@ export default function CodeProfile() {
   }, [typeDescription]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#1e1e1e] text-[#4ec9b0] p-2">
-      <pre className="font-mono text-sm leading-relaxed overflow-x-auto max-w-4xl">
+    <div className="min-h-screen flex items-center justify-center bg-[#1e1e1e] text-[#4ec9b0] p-4">
+      <pre className="font-mono text-sm leading-relaxed overflow-x-auto max-w-4xl max-h-[calc(100vh-2rem)] overflow-y-auto">
         {`{
   "name": "ryan huang",
   "description": `}
