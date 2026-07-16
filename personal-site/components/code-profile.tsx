@@ -80,11 +80,6 @@ ${formatStringList(profile.countriesVisited)}
 ${formatWork()}
   ],
 
-  "contact": [
-`}
-        <CodeLinkList links={profile.contact} />
-        {`  ],
-
   "profiles": [
 `}
         <CodeLinkList links={profile.profiles} />

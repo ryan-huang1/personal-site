@@ -43,16 +43,6 @@ export const profile = {
       status: "previous",
     },
   ],
-  contact: [
-    {
-      label: "ryanhuang.xyz",
-      href: "https://ryanhuang.xyz",
-    },
-    {
-      label: "hello@ryanhuang.xyz",
-      href: "mailto:hello@ryanhuang.xyz",
-    },
-  ],
   profiles: [
     {
       label: "instagram",
@@ -73,4 +63,4 @@ export const profile = {
   ],
 } as const;
 
-export type ProfileLink = (typeof profile.contact)[number] | (typeof profile.profiles)[number];
+export type ProfileLink = (typeof profile.profiles)[number];
