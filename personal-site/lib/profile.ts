@@ -29,17 +29,12 @@ export const profile = {
   work: [
     {
       company: "endeavor ai",
-      role: "head of product",
+      role: "director of ai r&d",
       status: "current",
     },
     {
       company: "boardy ai",
       role: "agentic voice",
-      status: "previous",
-    },
-    {
-      company: "horen research",
-      role: "ml optimization",
       status: "previous",
     },
     {
