@@ -20,6 +20,10 @@ type VideoPlayerProps = {
   video: VideoMetadata;
 };
 
+const DEFAULT_FOV = 90;
+const DRAG_SPEED = -0.5;
+const PINCH_ZOOM_SPEED = 0.16;
+
 const clamp = (value: number, minimum: number, maximum: number) =>
   Math.min(Math.max(value, minimum), maximum);
 
@@ -92,13 +96,36 @@ export function VideoPlayer({ hlsUrl, posterUrl, video }: VideoPlayerProps) {
   }, [isPlaying]);
 
   useEffect(() => {
+    const stage = stageRef.current;
+    const visualViewport = window.visualViewport;
+
+    if (!stage) return;
+
+    const syncViewerHeight = () => {
+      const height = visualViewport?.height ?? window.innerHeight;
+      stage.style.setProperty("--viewer-height", `${Math.round(height)}px`);
+    };
+
+    syncViewerHeight();
+    visualViewport?.addEventListener("resize", syncViewerHeight);
+    visualViewport?.addEventListener("scroll", syncViewerHeight);
+    window.addEventListener("orientationchange", syncViewerHeight);
+
+    return () => {
+      visualViewport?.removeEventListener("resize", syncViewerHeight);
+      visualViewport?.removeEventListener("scroll", syncViewerHeight);
+      window.removeEventListener("orientationchange", syncViewerHeight);
+    };
+  }, []);
+
+  useEffect(() => {
     const viewport = viewportRef.current;
     const sourceVideo = videoRef.current;
 
     if (!viewport || !sourceVideo) return;
 
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(72, 1, 0.01, 200);
+    const camera = new THREE.PerspectiveCamera(DEFAULT_FOV, 1, 0.01, 200);
     const renderer = new THREE.WebGLRenderer({
       antialias: true,
       alpha: true,
@@ -129,7 +156,7 @@ export function VideoPlayer({ hlsUrl, posterUrl, video }: VideoPlayerProps) {
     controls.enableDamping = true;
     controls.enablePan = false;
     controls.enableZoom = false;
-    controls.rotateSpeed = -0.28;
+    controls.rotateSpeed = DRAG_SPEED;
 
     const resize = () => {
       const width = viewport.clientWidth;
@@ -160,7 +187,7 @@ export function VideoPlayer({ hlsUrl, posterUrl, video }: VideoPlayerProps) {
 
       event.preventDefault();
       const nextDistance = pinchDistance(event.touches);
-      zoom((lastPinchDistance - nextDistance) * 0.08);
+      zoom((lastPinchDistance - nextDistance) * PINCH_ZOOM_SPEED);
       lastPinchDistance = nextDistance;
     };
 

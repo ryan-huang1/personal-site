@@ -1,0 +1,5 @@
+/videos/*/opengraph-image
+  Content-Type: image/png
+
+/videos/*/twitter-image
+  Content-Type: image/png

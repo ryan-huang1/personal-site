@@ -25,10 +25,27 @@ export async function generateMetadata({
   params,
 }: VideoPageProps): Promise<Metadata> {
   const video = await getVideo(params.id);
+  const description = `Explore ${video.title} as an interactive 360° film.`;
+  const title = `${video.title} — 360°`;
+  const url = `/videos/${video.id}`;
 
   return {
-    title: `${video.title} — 360°`,
-    description: `Explore ${video.title} as an interactive 360° film.`,
+    title,
+    description,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title,
+      description,
+      type: "website",
+      url,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
   };
 }
 
