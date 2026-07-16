@@ -1,9 +1,5 @@
-import CodeProfile from "@/components/code-profile-realistic-typing"
+import { CodeProfile } from "@/components/code-profile";
 
-export default function Page() {
-  return (
-    <div>
-      <CodeProfile />
-    </div>
-  )
+export default function HomePage() {
+  return <CodeProfile />;
 }

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import Script from "next/script";
 import "./globals.css";
@@ -8,15 +8,39 @@ const geistSans = localFont({
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
 
+const description =
+  "Ryan Huang is a product builder, endurance athlete, traveler, photographer, and coder.";
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ryanhuang.xyz"),
   title: "Ryan Huang",
-  description: "Doing things, all the things",
+  description,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Ryan Huang",
+    description,
+    type: "website",
+    url: "/",
+  },
+  twitter: {
+    card: "summary",
+    title: "Ryan Huang",
+    description,
+  },
+};
+
+export const viewport: Viewport = {
+  colorScheme: "dark",
+  themeColor: "#1e1e1e",
 };
 
 export default function RootLayout({
