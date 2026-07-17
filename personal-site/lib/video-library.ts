@@ -28,7 +28,9 @@ type VideoCatalog = {
 };
 
 async function fetchJson<T>(path: string): Promise<T> {
-  const response = await fetch(`${VIDEO_ORIGIN}/videos/${path}`);
+  const response = await fetch(`${VIDEO_ORIGIN}/videos/${path}`, {
+    next: { revalidate: 60 },
+  });
 
   if (!response.ok) {
     throw new Error(`Video library request failed: ${response.status}`);
