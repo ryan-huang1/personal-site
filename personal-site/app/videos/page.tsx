@@ -38,7 +38,7 @@ function GalleryFilm({ video }: { video: VideoMetadata }) {
       <span aria-hidden="true" className="film-row__veil" />
       <span className="film-row__copy">
         <span className="film-row__eyebrow">
-          360° film · {formatDuration(video.durationSeconds)}
+          {formatDuration(video.durationSeconds)}
         </span>
         <span className="film-row__title">{video.title}</span>
         <span className="film-row__action">
@@ -58,17 +58,12 @@ export default async function VideosPage() {
         <Link className="film-library__brand" href="/">
           RH / 360
         </Link>
-        <p>Drag to look around. Headphones encouraged.</p>
       </header>
       <section aria-label="360 degree videos" className="film-library__list">
         {videos.map((video) => (
           <GalleryFilm key={video.id} video={video} />
         ))}
       </section>
-      <footer className="film-library__footer">
-        <span>{videos.length.toString().padStart(2, "0")} films</span>
-        <span>Shot in every direction</span>
-      </footer>
     </main>
   );
 }
